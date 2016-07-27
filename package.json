@@ -34,7 +34,7 @@
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "start": "watchify -o js/bundle.js -v -d js/app.js",
+    "start": "webpack-dev-server",
     "build": "browserify . -t [ babelify --presets [ react ] ] -o js/bundle.js"
   },
   "browserify": {
