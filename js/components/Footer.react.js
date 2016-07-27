@@ -19,7 +19,7 @@ var Footer = React.createClass({
 
     var completed = 0
     for (var key in allTodos) {
-      if (allTodos[key].completed) {
+      if (allTodos[key].complete) {
         completed ++
       }
     }
@@ -30,7 +30,7 @@ var Footer = React.createClass({
 
     // Undefined and thus not rendered if no completed items are left.
     var clearCompletedButton
-    if (completed > 0) {
+    if (completed) {
       clearCompletedButton =
         <button
           id="clear-completed"

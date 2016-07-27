@@ -108,14 +108,14 @@ var TodoStore = assign({}, EventEmitter.prototype, {
 // Register callback to handle all updates
 AppDispatcher.register(function (action) {
 
-  let text
+  var text
 
   switch (action.actionType) {
 
     case TodoConstants.TODO_CREATE:
 
       text = action.text.trim()
-      if (text != '') {
+      if (text !== '') {
 
         create(text)
         TodoStore.emitChange()
