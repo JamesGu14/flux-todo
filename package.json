@@ -1,0 +1,19 @@
+{
+  "name": "flux-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesGu14/flux-todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesGu14/flux-todo/issues"
+  },
+  "homepage": "https://github.com/JamesGu14/flux-todo#readme"
+}
