@@ -1,0 +1,46 @@
+{
+  "name": "flux-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesGu14/flux-todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesGu14/flux-todo/issues"
+  },
+  "homepage": "https://github.com/JamesGu14/flux-todo#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "es6-promise": "^3.2.1",
+    "flux": "^2.1.1",
+    "keymirror": "^0.1.1",
+    "object-assign": "^4.1.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "classnames": "^2.2.5",
+    "envify": "^3.4.1",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.7.0",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "browserify . -t [ babelify --presets [ react ] ] -o js/bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "babelify"
+    ]
+  }
+}
